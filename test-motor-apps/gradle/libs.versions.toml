@@ -1,0 +1,14 @@
+[versions]
+# Alineadas con motor-apps (gradle/libs.versions.toml del motor)
+kotlin = "2.3.21"
+agp = "8.13.0"
+android-compileSdk = "36"
+android-minSdk = "24"
+composeMultiplatform = "1.12.0"
+
+[plugins]
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
